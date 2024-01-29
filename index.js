@@ -102,6 +102,11 @@ app.post("/show",async(req,res,)=>{
   res.status(201).json(show)
 })
 
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
+
+
 
 
 app.listen(port, () => {
@@ -111,7 +116,7 @@ app.listen(port, () => {
 main().then(console.log("db connected")).catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect('mongodb+srv://muhammedsheheer99:hxEcDqiqru3VlG7I@cluster0.rd6ved2.mongodb.net/?retryWrites=true&w=majority');
+  await mongoose.connect('mongodb+srv://muhammedsheheer99:nVtw22PvY1zwSY10@cluster0.mfffnwy.mongodb.net/?retryWrites=true&w=majority');
 
   // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled
 }
